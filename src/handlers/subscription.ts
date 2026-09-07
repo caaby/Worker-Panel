@@ -1,6 +1,7 @@
 import { getClNormalConfig, getClWarpConfig } from '@cores/clash/configs';
 import { getURLConfigs } from '@cores/common';
 import { getSbCustomConfig, getSbWarpConfig } from '@cores/sing-box/configs';
+import { getSurgeNodeList } from '@cores/surge/configs';
 import { getXrCustomConfigs, getXrWarpConfigs } from '@cores/xray/configs';
 import { setSettings, getGlobals, getKvSettings, getSharedSettings } from '@settings';
 import { fallback } from './utils';
@@ -34,6 +35,9 @@ export async function handleSubscriptions(request: Request, env: Env): Promise<R
                 case 'xray':
                 case 'sing-box':
                     return getURLConfigs();
+
+                case 'surge':
+                    return getSurgeNodeList();
 
                 default:
                     break;

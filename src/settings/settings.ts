@@ -143,6 +143,7 @@ export const subscriptions: Subscription = {
         categories: [
             { core: 'xray', clients: [`${_V2_}N(G)`, 'MahsaNG', 'Shadowrocket', 'Streisand', 'PassWall'] },
             { core: 'sing-box', clients: ['husi', 'NekoBox', 'Hiddify', 'Karing'] },
+            { core: 'surge', clients: ['Surge'] },
         ]
     },
     'warp': {

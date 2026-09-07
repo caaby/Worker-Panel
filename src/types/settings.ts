@@ -172,7 +172,7 @@ export interface WarpAccount {
 }
 
 interface ClientCategory {
-    core: 'xray' | 'xray-knocker' | 'sing-box' | 'clash' | 'wireguard' | 'amnezia';
+    core: 'xray' | 'xray-knocker' | 'sing-box' | 'clash' | 'surge' | 'wireguard' | 'amnezia';
     clients: string[];
 }
 
